@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>MST</title>
+    <meta charset="utf-8">
+    <meta name="description" content="MST">
+    <link rel="stylesheet" href="test_davl.css" type="text/css">
+    <link rel="shortcut icon" href="Resources/MST.ico" type="image/png">
+</head>
+
+<body>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .text-line {
+          font-size: 32px;
+          font-weight: bold;
+          margin: 0;
+        }
+      
+        .gif-block {
+          height: 60px;
+          background-image: url('Resources/spiral.gif');
+          background-size: cover;
+          margin: 10px;
+          animation: play-gif 3s steps(12) infinite;
+        }
+        .gif1 { background-position: 0 0; width:200px; }
+        .gif2 { background-position: -200px 0; width:50px; }
+        .gif3 { background-position: -400px 0; width:70px;}
+        .gif4 { background-position: -600px 0; width:150px;}
+        .gif5 { background-position: -800px 0; width:300px;}
+      
+        @keyframes play-gif {
+          0% { background-position-y: 0; }
+          100% { background-position-y: -1200px; }
+        }
+      </style>
+      
+      <p class="text-line">We're here</p>
+      <div class="gif-block gif1"></div>
+      
+      <p class="text-line">to make</p>
+      <div class="gif-block gif2"></div>
+      
+      <p class="text-line">healthy living effortless,</p>
+      <div class="gif-block gif3"></div>
+      
+      <p class="text-line">so you can</p>
+      <div class="gif-block gif4"></div>
+      
+      <p class="text-line">live longer</p>
+      <div class="gif-block gif5"></div>
+      
+      <p class="text-line">and happier</p>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>MST</title>
+  <meta charset="utf-8">
+  <meta name="description" content="MST">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test_davl.css" type="text/css">
+  <link rel="shortcut icon" href="Resources/MST.ico" type="image/png">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">MST</a>
+      <nav class="nav">
+        <button class="burger" aria-label="Open menu">&#9776;</button>
+        <ul class="menu header-menu">
+          <li><a href="#PD">Project details</a></li>
+          <li><a href="#GF">Gallery & Features</a></li>
+          <li><a href="#CU">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="content" id="PD">
+      <div class="PD-text">
+        <h1>Affordable Housing in Moscow</h1>
+        <h2>Modern apartments with smart layouts in well-connected neighborhoods. Direct developer prices.</h2>
+
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p><strong>85%</strong> – Construction progress completed</p>
+        </div>
+
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p><strong>₽8.5M</strong> – Starting price for 1-bedroom apartments</p>
+        </div>
+
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p><strong>5 min</strong> – Walk to the nearest metro station</p>
+        </div>
+
+        <button>Order</button>
+      </div>
+      <img src="Resources/img3.jpg" class="side-image-1" alt="">
+    </div>
+    <div class="content" id="GF">
+      <img src="Resources/img1.jpg" class="side-image-2" alt="">
+      <div class="features">
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p>Eco-friendly design with energy-efficient windows.</p>
+        </div>
+        <hr>
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p>Flexible spaces for compact living.</p>
+        </div>
+        <hr>
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p>Quick access to downtown Moscow.</p>
+        </div>
+        <hr>
+        <div class="feature">
+          <img src="Resources/img5.png" alt="">
+          <p>Child-friendly environment.</p>
+        </div>
+        <hr>
+        <button>Order</button>
+      </div>
+      <img src="Resources/img2.jpg" class="side-image-2" alt="">
+    </div>
+    <div id="CU" class="contact-form">
+      <form class="contact-cont">
+        <h1>Questions? We answer fast!</h1>
+        <input type="text" name="Name" placeholder="Name" aria-label="Your name">
+        <input type="email" name="Email" placeholder="E-mail" aria-label="Your email">
+        <p><input type="checkbox" name="Checkbox">I accept <a href="#">Private policy</a></input></p>
+        <button>Submit form</button>
+      </form>
+      <img src="Resources/img7.jpg" class="side-image-1" alt="">
+    </div>
+  </div>
+  <footer class="container">
+
+    <nav>
+      <ul class="menu footer-menu">
+        <li><a href="#">Project details</a></li>
+        <li><a href="#">Gallery & Features</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-cont">
+      <a href="#" class="logo">MST</a>
+      <div class="icons">
+        <img src="Resources/img8.png" alt="">
+        <img src="Resources/img9.png" alt="">
+        <img src="Resources/img10.png" class="side-image-2" alt="">
+        <img src="Resources/img11.png" class="side-image-2" alt="">
+        <img src="Resources/img12.png" class="side-image-2" alt="">
+
+      </div>
+      <button>Order</button>
+    </div>
+    <div class="footer-cont">
+      <p>© 2024, Copyright.</p>
+      <a href="#">Private policy</a>
+      <a href="#">Terms of Use</a>
+
+    </div>
+
+
+  </footer>
+</body>
+
+<script>
+  let header = document.querySelector(".header")
+  window.onscroll = function () {
+
+    if (window.scrollY > 10) {
+      header.style.background = "#000000"
+    }
+    else {
+      header.style.background = "rgba(0, 0, 0, 0)"
+    }
+  }
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".menu");
+
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+  document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+</script>
+
+</html>
